@@ -2,6 +2,7 @@ package com.test.testandroid.data.constants;
 
 
 import com.test.testandroid.BuildConfig;
+import com.test.testandroid.BuildConfig;
 
 /**
  * Created by habeeb on 18/04/18.

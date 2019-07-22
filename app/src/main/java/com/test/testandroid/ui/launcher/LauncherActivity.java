@@ -18,7 +18,6 @@ import com.test.testandroid.injection.component.ActivityComponent;
 import com.test.testandroid.ui.base.BaseActivity;
 import com.test.testandroid.util.NetworkUtil;
 import com.f2prateek.rx.preferences2.RxSharedPreferences;
-import com.google.firebase.iid.FirebaseInstanceId;
 
 import javax.inject.Inject;
 
@@ -58,7 +57,6 @@ public class LauncherActivity extends BaseActivity implements LauncherMvpView {
        setContentView(R.layout.activity_login);
 
         mLauncherPresenter.attachView(this);
-        String token = FirebaseInstanceId.getInstance().getToken();
         String androidId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
         String name = android.os.Build.MODEL;
         launch();

@@ -1,6 +1,4 @@
 apply plugin: 'com.android.application'
-apply from: '../config/quality/quality.gradle'
-apply plugin: 'com.github.triplet.play'
 //TODO uncomment line below after adding fabric api secret and key to fabric.properties
 //apply plugin: 'io.fabric'
 
@@ -10,7 +8,7 @@ android {
 
 
     defaultConfig {
-        applicationId 'com.jambo.jamboandroid'
+        applicationId 'com.test.testandroid'
         minSdkVersion 23
         targetSdkVersion 27
         testInstrumentationRunner "${applicationId}.runner.RxAndroidJUnitRunner"
@@ -86,12 +84,7 @@ android {
     }
 }
 
-play {
-    serviceAccountEmail = 'your-service-account-email'
-    pk12File = file('key.p12')
-    // By default publishes to Alpha channel
-    track = 'alpha'
-}
+
 
 dependencies {
     final SUPPORT_LIBRARY_VERSION = '27.1.1'
@@ -197,4 +190,4 @@ tasks.matching { it instanceof Test }.all {
     testLogging.events = ["failed", "passed", "skipped"]
 }
 
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
