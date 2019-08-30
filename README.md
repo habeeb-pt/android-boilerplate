@@ -23,7 +23,7 @@ Libraries and tools included:
 
 - JDK 1.8
 - [Android SDK](http://developer.android.com/sdk/index.html).
-- Android N [(API 24) ](http://developer.android.com/tools/revisions/platforms.html).
+- Android N [(API) ](http://developer.android.com/tools/revisions/platforms.html).
 - Latest Android SDK Tools and build tools.
 
 
